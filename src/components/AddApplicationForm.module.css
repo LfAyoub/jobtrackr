@@ -1,0 +1,14 @@
+.form {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
