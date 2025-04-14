@@ -3,6 +3,7 @@ import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
+import Container from "@mui/material/Container";
 import { useState } from "react";
 import styles from "./AddApplicationForm.module.css";
 import FormButton from "./FormButton";
@@ -37,7 +38,20 @@ function AddApplicationForm() {
   }
 
   return (
-    <form className={styles.form}>
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        mt: 3,
+        border: "1px solid #ccc",
+        borderRadius: "8px",
+        padding: "20px",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        backgroundColor: "#fff",
+      }}
+      maxWidth="sm"
+    >
       <div className={styles.formRow}>
         <FormControl sx={{ mx: "auto", mt: 3, minWidth: "90%" }}>
           <InputLabel htmlFor="application-name">Company</InputLabel>
@@ -87,7 +101,7 @@ function AddApplicationForm() {
         </FormControl>
       </div>
       <FormButton onClick={handleSubmit}>Add application</FormButton>
-    </form>
+    </Container>
   );
 }
 

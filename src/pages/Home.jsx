@@ -1,7 +1,6 @@
 import LastApplications from "../components/LastApplications";
 import ApplicationsStats from "../components/ApplicationsStats";
 import MyDocuments from "../components/MyDocuments";
-import MyProfile from "../components/MyProfile";
 import ProfileCard from "../components/ProfileCard";
 import { Container, Grid } from "@mui/material";
 import { useEffect } from "react";
@@ -26,7 +25,6 @@ function Home({ data }) {
       <h1 className="pageTitle">Welcome back, Ayoub</h1>
       <Grid container spacing={3} pt={5}>
         <Grid item xs={12} md={6}>
-          {/* <MyProfile /> */}
           <ProfileCard user={user} />
         </Grid>
 

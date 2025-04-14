@@ -5,6 +5,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import { useState } from "react";
 import styles from "./AddApplicationForm.module.css";
 import FormButton from "./FormButton";
@@ -61,7 +62,20 @@ function EditApplicationForm() {
   ) : (
     <Box sx={{ mx: 1 }}>
       <h1 className="pageTitle">Edit application</h1>
-      <form className={styles.form}>
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          mt: 3,
+          border: "1px solid #ccc",
+          borderRadius: "8px",
+          padding: "20px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          backgroundColor: "#fff",
+        }}
+        maxWidth="sm"
+      >
         <div className={styles.formRow}>
           <FormControl sx={{ m: 1, minWidth: 500 }}>
             <InputLabel htmlFor="application-name">Company</InputLabel>
@@ -116,7 +130,7 @@ function EditApplicationForm() {
             Save
           </FormButton>
         </Box>
-      </form>
+      </Container>
     </Box>
   );
 }
