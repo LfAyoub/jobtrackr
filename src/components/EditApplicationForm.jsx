@@ -97,7 +97,7 @@ function EditApplicationForm() {
           </FormControl>
         </div>
         <div className={styles.formRow}>
-          <FormControl sx={{ m: 1, minWidth: 200 }}>
+          <FormControl sx={{ m: 1, minWidth: 250 }}>
             <InputLabel id="status">Status</InputLabel>
             <Select
               labelId="status-select-label"
@@ -112,7 +112,7 @@ function EditApplicationForm() {
               <MenuItem value="Offer">Offer</MenuItem>
             </Select>
           </FormControl>
-          <FormControl sx={{ m: 1, minWidth: 200 }}>
+          <FormControl sx={{ m: 1, minWidth: 250 }}>
             <InputLabel htmlFor="date">Date</InputLabel>
             <Input
               id="date"

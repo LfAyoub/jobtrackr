@@ -53,7 +53,7 @@ function AddApplicationForm() {
       maxWidth="sm"
     >
       <div className={styles.formRow}>
-        <FormControl sx={{ mx: "auto", mt: 3, minWidth: "90%" }}>
+        <FormControl sx={{ m: 1, minWidth: 500 }}>
           <InputLabel htmlFor="application-name">Company</InputLabel>
           <Input
             id="company"
@@ -63,7 +63,7 @@ function AddApplicationForm() {
         </FormControl>
       </div>
       <div className={styles.formRow}>
-        <FormControl sx={{ mx: "auto", mt: 3, minWidth: "90%" }}>
+        <FormControl sx={{ m: 1, minWidth: 500 }}>
           <InputLabel htmlFor="position">Position</InputLabel>
           <Input
             id="position"
@@ -73,7 +73,7 @@ function AddApplicationForm() {
         </FormControl>
       </div>
       <div className={styles.formRow}>
-        <FormControl sx={{ mx: "auto", mt: 3, minWidth: "45%" }}>
+        <FormControl sx={{ m: 1, minWidth: 250 }}>
           <InputLabel id="status">Status</InputLabel>
           <Select
             labelId="status-select-label"
@@ -88,7 +88,7 @@ function AddApplicationForm() {
             <MenuItem value="Offer">Offer</MenuItem>
           </Select>
         </FormControl>
-        <FormControl sx={{ mx: "auto", mt: 3, minWidth: "45%" }}>
+        <FormControl sx={{ m: 1, minWidth: 250 }}>
           <InputLabel shrink htmlFor="date">
             Date
           </InputLabel>
