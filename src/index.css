@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("background.png");
+  background-image: url("/background.png");
   color: #2f2f2f;
 }
 
