@@ -16,7 +16,7 @@ function MyDocuments() {
         }}
       >
         <a
-          href="/resume.pdf"
+          href="/CV-Lafdail.pdf"
           target="_blank"
           rel="noreferrer"
           className={styles.documentLink}
