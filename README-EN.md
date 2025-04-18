@@ -21,6 +21,15 @@ The project is accessible at the following URL : https://jobtrackr.pages.dev
 - **Charting**: Chart.js
 - **Routing**: React Router
 
+# 🗃️ Database Structure
+
+Here's a quick look at the database schema used to store job applications:
+
+- company : Name of the company
+- position : Job title
+- status : Application status
+- date : Date of the application
+
 ## ✅ Coming Soon
 
 - Job board integration

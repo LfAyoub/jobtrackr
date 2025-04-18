@@ -21,6 +21,15 @@ Le projet est accessible à l'adresse suivante : https://jobtrackr.pages.dev
 - **Graphiques** : Chart.js
 - **Routage** : React Router
 
+## Structure de la base de données
+
+Voici un aperçu de la structure de la base de données utilisée pour stocker vos candidatures :
+
+- company : Nom de l'entreprise
+- position : Intitulé du poste
+- status : Statut de la candidature
+- date : Date de la candidature
+
 ## ✅ À venir
 
 - Intégration d'un job board
