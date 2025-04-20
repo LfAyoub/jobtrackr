@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Container,
   Typography,
@@ -11,7 +12,6 @@ import {
   Button,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import styles from "./LastApplications.module.css";
 
 function LastApplications({ data }) {

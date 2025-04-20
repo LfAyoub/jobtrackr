@@ -11,8 +11,7 @@ function MyDocuments() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: "1rem",
-          my: "2rem",
+          gap: 1,
         }}
       >
         <a

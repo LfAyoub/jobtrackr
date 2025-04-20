@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom";
-import FormControl from "@mui/material/FormControl";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+import {
+  Container,
+  Box,
+  FormControl,
+  Input,
+  InputLabel,
+  Select,
+  MenuItem,
+} from "@mui/material";
 import { useState } from "react";
 import styles from "./AddApplicationForm.module.css";
 import FormButton from "./FormButton";
@@ -77,7 +79,7 @@ function EditApplicationForm() {
         maxWidth="sm"
       >
         <div className={styles.formRow}>
-          <FormControl sx={{ m: 1, minWidth: 500 }}>
+          <FormControl sx={{ m: 1 }} fullWidth>
             <InputLabel htmlFor="application-name">Company</InputLabel>
             <Input
               id="company"
@@ -87,7 +89,7 @@ function EditApplicationForm() {
           </FormControl>
         </div>
         <div className={styles.formRow}>
-          <FormControl sx={{ m: 1, minWidth: 500 }}>
+          <FormControl sx={{ m: 1 }} fullWidth>
             <InputLabel htmlFor="position">Position</InputLabel>
             <Input
               id="position"
@@ -97,7 +99,7 @@ function EditApplicationForm() {
           </FormControl>
         </div>
         <div className={styles.formRow}>
-          <FormControl sx={{ m: 1, minWidth: 250 }}>
+          <FormControl sx={{ m: 1 }} fullWidth>
             <InputLabel id="status">Status</InputLabel>
             <Select
               labelId="status-select-label"
@@ -112,7 +114,7 @@ function EditApplicationForm() {
               <MenuItem value="Offer">Offer</MenuItem>
             </Select>
           </FormControl>
-          <FormControl sx={{ m: 1, minWidth: 250 }}>
+          <FormControl sx={{ m: 1 }} fullWidth>
             <InputLabel htmlFor="date">Date</InputLabel>
             <Input
               id="date"

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 import { TableRow, TableCell, Modal, Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import styles from "./ApplicationItem.module.css";
+import PropTypes from "prop-types";
 import { useApplications } from "../context/ApplicationContext";
+import styles from "./ApplicationItem.module.css";
 
 function ApplicationItem({ application }) {
   const [open, setOpen] = useState(false);
