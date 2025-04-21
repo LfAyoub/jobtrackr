@@ -1,10 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import PropTypes from "prop-types";
 
-// Création du contexte
 const ApplicationContext = createContext();
 
-// Provider qui englobe l'application
 function ApplicationProvider({ children }) {
   const [applications, setApplications] = useState([
     {
@@ -30,17 +28,15 @@ function ApplicationProvider({ children }) {
     },
   ]);
 
-  // Fonction pour ajouter une candidature
   function addApplication(newApplication) {
     const applicationWithId = {
       ...newApplication,
-      id: Date.now().toString(), // Génère un ID unique basé sur le timestamp
+      id: Date.now().toString(),
     };
 
     setApplications((prevApps) => [...prevApps, applicationWithId]);
   }
 
-  // Fonction pour supprimer une candidature
   function deleteApplication(id) {
     setApplications((prevApps) =>
       prevApps.filter((application) => application.id !== id)

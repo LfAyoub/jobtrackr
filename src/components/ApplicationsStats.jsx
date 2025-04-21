@@ -20,8 +20,8 @@ function ApplicationsStats({ data }) {
       return acc;
     }, {});
 
-    const labels = Object.keys(statusCount); // Liste des statuts
-    const counts = Object.values(statusCount); // Nombre d'occurrences par statut
+    const labels = Object.keys(statusCount);
+    const counts = Object.values(statusCount);
     const colors = labels.map((status) => statusColors[status]);
 
     return {
@@ -29,7 +29,7 @@ function ApplicationsStats({ data }) {
       datasets: [
         {
           data: counts,
-          backgroundColor: colors.slice(0, labels.length), // Assurer le bon nombre de couleurs
+          backgroundColor: colors.slice(0, labels.length),
           borderWidth: 1,
         },
       ],

@@ -41,9 +41,8 @@ function ApplicationsList({ data }) {
     const filtered = applications.filter((application) => {
       const searchableText =
         `${application.position} ${application.company}`.toLowerCase();
-      const keywords = search.toLowerCase().split(" ").filter(Boolean); // Découpe l'input en mots-clés
+      const keywords = search.toLowerCase().split(" ").filter(Boolean);
 
-      // Vérifie que TOUS les mots-clés sont présents dans searchableText
       return keywords.every((word) => searchableText.includes(word));
     });
     setResultsNumber(filtered.length);

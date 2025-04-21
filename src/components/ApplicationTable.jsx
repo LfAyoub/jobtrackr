@@ -30,7 +30,7 @@ function ApplicationTable({ filteredApplications, resultsNumber }) {
         <TableBody>
           {filteredApplications
             .slice()
-            .sort((a, b) => new Date(b.date) - new Date(a.date)) // Trie du plus récent au plus ancien
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
             .slice(0, resultsNumber)
             .map((application) => (
               <ApplicationItem application={application} key={application.id} />

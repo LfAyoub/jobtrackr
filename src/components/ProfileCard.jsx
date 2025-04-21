@@ -21,14 +21,13 @@ export default function ProfileCard({ user }) {
         overflow: "hidden",
       }}
     >
-      {/* Bande colorée en haut */}
       <Box
         sx={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
-          height: "30%", // 20% du haut coloré
+          height: "30%",
           backgroundColor: "primary.main",
           borderTopLeftRadius: "4px",
           borderTopRightRadius: "4px",
@@ -79,7 +78,6 @@ export default function ProfileCard({ user }) {
         </Typography>
       </CardContent>
 
-      {/* Boutons sociaux */}
       <CardActions sx={{ justifyContent: "center", gap: 1 }}>
         <IconButton
           component="a"
@@ -101,13 +99,12 @@ export default function ProfileCard({ user }) {
         </IconButton>
         <IconButton
           component="a"
-          href={user.website} // Lien vers ton site personnel
+          href={user.website}
           target="_blank"
           rel="noopener noreferrer"
-          color="secondary" // Change la couleur si nécessaire
+          color="secondary"
         >
           <Language fontSize="large" color="primary" />
-          {/* Icône de site personnel */}
         </IconButton>
       </CardActions>
     </Card>

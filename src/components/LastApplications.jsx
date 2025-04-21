@@ -39,8 +39,8 @@ function LastApplications({ data }) {
           <TableBody>
             {applications
               .slice()
-              .sort((a, b) => new Date(b.date) - new Date(a.date)) // Trie par date décroissante
-              .slice(0, 3) // Prend seulement les 3 premières (les plus récentes)
+              .sort((a, b) => new Date(b.date) - new Date(a.date))
+              .slice(0, 3)
               .map((application) => (
                 <TableRow key={application.id}>
                   <TableCell>{application.company}</TableCell>

@@ -1,7 +1,8 @@
-import styles from "./Loading.module.css";
+import { Ring } from "ldrs/react";
+import "ldrs/react/Ring.css";
 
 function Loading() {
-  return <p className={styles.loading}>Loading...</p>;
+  return <Ring size="40" stroke="5" bgOpacity="0" speed="2" color="black" />;
 }
 
 export default Loading;
